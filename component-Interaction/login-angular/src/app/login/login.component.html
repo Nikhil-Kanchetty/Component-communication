@@ -1,0 +1,27 @@
+<form class="form">
+  <div class="container">
+    
+    <img src="assets/images/PaypalLogo.png" class="img">
+    <div class="row">
+      <div class="col-md-4">
+               
+        <input type="email" id="emailID" class="user" placeholder="Enter E-mail" name="emailID" [(ngModel)]="email">
+        <p id="errMsgUsername"  name="usernameError">{{userNameErr}}</p>
+                
+        <input type="password" id="password" class="pass" placeholder="Enter Password" name="password" [(ngModel)]="password">
+        <p id="errorMsgPassword" name="passwordError">{{passErr}}</p>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <button class="btn btn-primary" class="registerbtn" type="submit" (click)="validation()">Sign In</button>  
+        <hr class="hr1">
+    <p class="p">or</p>
+    <hr class="hr2">
+        <!-- routerLink="/loggedIn" -->
+        <button class="btn btn-danger" class="registerbtn1"  type="button" routerLink="/register" (click)="signUp()">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</form>

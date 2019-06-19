@@ -1,0 +1,33 @@
+<form class="form">
+  <div class="container">
+    
+    <img src="assets/images/PaypalLogo.png" class="img">
+    <div class="row">
+      <div class="col-md-4">
+
+        <input type="text" class="first" name="firstName" id="firstName" placeholder="Enter FirstName" [(ngModel)]="firstName">
+        <p id="firstNameErr" name="firstNameErr">{{firstNameErr}}</p>
+
+        <input type="text" class="last" name="lastName" id="lastName" placeholder="Enter LastName" [(ngModel)]="lastName">
+        <p id="lastNameErr" name="lastNameErr">{{lastNameErr}}</p>
+
+        <input type="text" class="email" name="emailId" id="emailId" placeholder="Enter E-mail" [(ngModel)]="emailId">
+        <p id="emailIdErr" name="emailIdErr">{{emailIdErr}}</p>
+
+        <input type="password" class="pass" name="password" id="password"  placeholder="Enter Password" [(ngModel)]="password">
+        <p id="passwordErr" name="passwordErr">{{passwordErr}}</p>
+
+        <input type="password" class="conf" name="confirmPassword" id="confirmPassword" placeholder="Enter ConfirmPassword" [(ngModel)]="confirmPassword">
+        <p id="confirmPasswordErr" name="confirmPasswordErr">{{confirmPasswordErr}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <button type="submit" class="btn btn-primary" class="registerbtn1" id="btnRegister" name="register" (click)="regValidation()">Sign Up</button>
+      <!-- routerLink="" -->
+      <button class="btn btn-danger" class="registerbtn1"  type="button" routerLink="">Cancel</button>
+    </div>
+  </div>
+</form>
+
+
+
